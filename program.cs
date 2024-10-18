@@ -41,6 +41,52 @@ namespace nNİ
 
             Console.ReadKey();
 
+
+
+
+             Random random = new Random();
+
+ int sayi1, sayi2, sonuc, giris;
+
+ sayi1 = random.Next(0, 101);
+ sayi2 = random.Next(0, 101);
+
+ sonuc = sayi1 + sayi2;
+
+ Console.WriteLine($"s1={sayi1}, s2={sayi2}");
+ giris = Convert.ToInt32( Console.ReadLine() );
+ Console.Clear();
+
+ if (sonuc == giris) 
+     Console.WriteLine("Bildin");
+ else
+     Console.WriteLine("Bilemedin");
+
+  Console.ReadKey();
+
+
+
+
+             int sayi1, sayi2;
+ sayi1 = Convert.ToInt32(Console.ReadLine());
+ sayi2 = Convert.ToInt32(Console.ReadLine());
+
+ if (sayi1 > sayi2)
+ {
+     Console.WriteLine(sayi1);
+ }
+
+ else if (sayi1 < sayi2)
+ {
+     Console.WriteLine(sayi2);
+
+
+
+
+
+ }
+ else Console.WriteLine("Eşit");
+
         }
     }
 }
