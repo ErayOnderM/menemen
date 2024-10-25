@@ -173,3 +173,55 @@ else { Console.WriteLine("yanlış sayı girdin enayi"); }
 
 Console.ReadKey();
 */
+  /*
+  Console.WriteLine("lütfen işlem yapacağınız iki sayı girin");
+  int x = Convert.ToInt32(Console.ReadLine());
+  int y = Convert.ToInt32(Console.ReadLine());
+  Console.Clear();
+  Console.WriteLine("[1]toplama");
+  Console.WriteLine("[2]çıkarma");
+  Console.WriteLine("[3]çarpma");
+  Console.WriteLine("[4]bölme");
+  Console.WriteLine("işlem yapmak için 1-4 e kadar sayı girin");
+  int sayi = Convert.ToInt32(Console.ReadLine());
+  Console.Clear();
+
+  if (sayi == 1) Console.WriteLine(x + y); 
+  else if (sayi == 2) Console.WriteLine(x - y);
+  else if (sayi == 3) Console.WriteLine(x * y);
+  else if (sayi > 4) Console.WriteLine(x / y);
+  else Console.WriteLine("1-4 e kadar sayı gir");
+  Console.ReadKey();
+  */
+
+  Console.BackgroundColor = ConsoleColor.Red;
+
+  Console.WriteLine("[1]toplama");
+  Console.WriteLine("[2]çıkarma");
+  Console.WriteLine("[3]çarpma");
+  Console.WriteLine("[4]bölme");
+  Console.WriteLine("işlem yapmak için 1-4 e kadar sayı girin");
+
+  int sayi = Convert.ToInt32(Console.ReadLine());
+  int sonuc = 0;
+  Console.WriteLine("işlem yapacağınız iki sayıyı girin");
+
+  int x = Convert.ToInt32(Console.ReadLine());
+  int y = Convert.ToInt32(Console.ReadLine());
+
+  switch (sayi)
+  {
+      case 1:
+          sonuc = x + y; break;
+      case 2:
+          sonuc = x - y; break;
+      case 3:
+          sonuc = x * y; break;
+      case 4:
+          sonuc = x / y; break;
+      default:
+          Console.WriteLine("erenin götü kadar kafan var mı?"); break;
+         
+  }
+  Console.WriteLine("sonuç budur" + sonuc);
+      Console.ReadKey();
