@@ -270,3 +270,37 @@ Console.ReadKey();
             Console.WriteLine($"Aldığınız prim : {prim}");
             Console.WriteLine($"Aldığınız toplam maaş: {toplamUcret}");
             Console.ReadKey();
+
+
+
+
+
+
+ /* bir kişi alışveriş sırasında 3 tane  ayakkabı almıştır. kişiye aldığı her bir ayakkabının fiyatı sorulacak ve tutara indirim hesaplanacaktır
+  * toplam tutar 1500 ve üzerinde ise yüzde 8 toplam tutar 2000 ve üzerinde ise yüzde 12 indirim uygulanacaktır buna kişiye ayakkabıların fiyatını sorup
+  * 
+  * - toplam tutar
+  * -indirim tutar
+  * -ödemesi gereke tutar
+  * hesaplayan ekrana yazan pogramı yaz*/
+
+
+ Console.Write("a1 fiyat");
+ double a1 = Convert.ToInt32(Console.ReadLine());
+ Console.Write("a2 fiyat");
+ double a2 = Convert.ToInt32(Console.ReadLine());
+ Console.Write("a3 fiyat");
+ double a3 = Convert.ToInt32(Console.ReadLine());
+ double top= a1 + a2 + a3;
+ double topTutar = 0;
+ if (top >= 1500 && top < 2000)
+     {
+     topTutar = top - ((top * 8) / 100);
+     }
+ else if (top >= 2000)
+     {
+     topTutar = top - ((top * 12) / 100);
+     }
+ Console.Write($"Toplam tutar  {top}");
+ Console.Write($"ödemesi gereken  {topTutar} ");
+ Console.ReadKey();
