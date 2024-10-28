@@ -245,7 +245,7 @@ Console.ReadKey();
                 Console.ReadKey();
 
 
-
+           //bir işçinin maaşını sor yaptığı ürün sayısını zor 
 
             
 
@@ -284,23 +284,37 @@ Console.ReadKey();
   * -ödemesi gereke tutar
   * hesaplayan ekrana yazan pogramı yaz*/
 
+    Console.Write("1. ayakkabının fiyatını girin: ");
+    double ayakkabi1 = Convert.ToDouble(Console.ReadLine());
 
- Console.Write("a1 fiyat");
- double a1 = Convert.ToInt32(Console.ReadLine());
- Console.Write("a2 fiyat");
- double a2 = Convert.ToInt32(Console.ReadLine());
- Console.Write("a3 fiyat");
- double a3 = Convert.ToInt32(Console.ReadLine());
- double top= a1 + a2 + a3;
- double topTutar = 0;
- if (top >= 1500 && top < 2000)
-     {
-     topTutar = top - ((top * 8) / 100);
-     }
- else if (top >= 2000)
-     {
-     topTutar = top - ((top * 12) / 100);
-     }
- Console.Write($"Toplam tutar  {top}");
- Console.Write($"ödemesi gereken  {topTutar} ");
- Console.ReadKey();
+    Console.Write("2. ayakkabının fiyatını girin: ");
+    double ayakkabi2 = Convert.ToDouble(Console.ReadLine());
+
+    Console.Write("3. ayakkabının fiyatını girin: ");
+    double ayakkabi3 = Convert.ToDouble(Console.ReadLine());
+        Console.Clear();
+
+    
+
+    double toplamTutar = ayakkabi1 + ayakkabi2 + ayakkabi3;
+
+    
+    double indirimOrani = 0.0;
+    if (toplamTutar >= 2000)
+    {
+        indirimOrani = 0.12; 
+    }
+    else if (toplamTutar >= 1500)
+    {
+        indirimOrani = 0.08; 
+    }
+    double indirimTutari = toplamTutar * indirimOrani;
+
+    
+    double odemeGerekenTutar = toplamTutar - indirimTutari;
+        
+  
+    Console.WriteLine($"Toplam Tutar: {toplamTutar:F2} TL");
+    Console.WriteLine($"İndirim Tutarı: {indirimTutari:F2} TL");
+    Console.WriteLine($"Ödenmesi Gereken Tutar: {odemeGerekenTutar:F2} TL");
+        Console.ReadKey();
