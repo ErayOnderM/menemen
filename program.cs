@@ -225,3 +225,48 @@ Console.ReadKey();
   }
   Console.WriteLine("sonuç budur" + sonuc);
       Console.ReadKey();
+
+
+
+
+
+ 
+            Console.WriteLine("yıl girin");
+            int yıl = Convert.ToInt32(Console.ReadLine());
+
+            if (yıl & 4 == 0) 
+            {
+                Console.WriteLine("şubat 29 çekiyor");
+            }
+            else
+            {
+                Console.WriteLine("şubat 28 çeker");
+            }
+                Console.ReadKey();
+
+
+
+
+            
+
+            Console.Write("Maaşınız kaç tl? :");
+            int maas = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Kaç parça ürettiniz? :");
+            int parcaSayisi = Convert.ToInt32(Console.ReadLine());
+
+            int prim = 0;
+
+            if (parcaSayisi >= 1 && parcaSayisi <= 5)
+                prim = parcaSayisi * 100;
+            else if (parcaSayisi >= 6 && parcaSayisi <= 20)
+                prim = parcaSayisi * 125;
+            else if (parcaSayisi >= 21 && parcaSayisi <= 50)
+                prim = parcaSayisi * 160;
+            else if (parcaSayisi >= 51) 
+                prim = parcaSayisi * 200;
+            int toplamUcret = maas + prim;
+            Console.Clear();
+            Console.WriteLine($"Maaşınız: {maas}");
+            Console.WriteLine($"Aldığınız prim : {prim}");
+            Console.WriteLine($"Aldığınız toplam maaş: {toplamUcret}");
+            Console.ReadKey();
