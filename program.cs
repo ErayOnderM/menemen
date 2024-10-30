@@ -1,15 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace nNİ
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
             double vize;
             double final;
             double not;
@@ -44,6 +32,11 @@ namespace nNİ
 
 
 
+
+
+
+
+
              Random random = new Random();
 
  int sayi1, sayi2, sonuc, giris;
@@ -63,6 +56,14 @@ namespace nNİ
      Console.WriteLine("Bilemedin");
 
   Console.ReadKey();
+
+
+
+
+
+
+
+
 
 
 
@@ -90,7 +91,7 @@ namespace nNİ
         }
     }
 }
-/*kullanıcının gireceğ, sayının pozitif veya negatif oldupnu ekrana yazan programı yazınız
+//kullanıcının gireceğ, sayının pozitif veya negatif oldupnu ekrana yazan programı yazınız
 
 int sayi = Convert.ToInt32(Console.ReadLine());
 if (sayi == 0)
@@ -115,7 +116,7 @@ Console.ReadKey();
 
 //kulllanıcının gireceği negatif sayıyı pozitif sayıya çeviren prıgramı yazınız. kullanıcı pozitif girerse bir şey yapılmayacak
 
-/*
+
 int sayi = Convert.ToInt32(Console.ReadLine());
 if (sayi < 0)
 {
@@ -135,7 +136,7 @@ Console.ReadKey();
 //geçme notu 65 oolan bir ders için kullanıcıdan vize finalnotlarını alıp ortalmayı hesaplayıp öğrencinin geçtiğini veya kaldığını ekrana yazan programı yazınız
 //geçme notu vize notunun yüzde %40ı ile final notunun % 60 ı toplanarak heaplanmaktadır
 
-/*
+
 double vize = Convert.ToInt32(Console.ReadLine());
 double final = Convert.ToInt32(Console.ReadLine());
 double sayi;
@@ -152,12 +153,19 @@ else
 }
 
 Console.ReadKey();
-*/
+
+
+
+
+
+
+
+
 
 //kullanıcıdan 1 ile 7 arasında bir sayı isteyip kullanıcının girdiği sayıya göre haftanın hangi günü olduğunu ekrana yazan programı yaz
 //1- pazartesi 2- salı 3- çarşamba ... 7- pazar eğer kullanıcı 1-7 dışında sayı girerse yanlış sayı yazdın diye ekrana yazsın
 
-/*
+
 Console.WriteLine("sayı gir moruk");
 int gün = Convert.ToInt32(Console.ReadLine());
 Console.Clear();
@@ -172,8 +180,8 @@ else if (gün == 7) { Console.WriteLine("pazar"); }
 else { Console.WriteLine("yanlış sayı girdin enayi"); }
 
 Console.ReadKey();
-*/
-  /*
+
+  
   Console.WriteLine("lütfen işlem yapacağınız iki sayı girin");
   int x = Convert.ToInt32(Console.ReadLine());
   int y = Convert.ToInt32(Console.ReadLine());
@@ -192,7 +200,16 @@ Console.ReadKey();
   else if (sayi > 4) Console.WriteLine(x / y);
   else Console.WriteLine("1-4 e kadar sayı gir");
   Console.ReadKey();
-  */
+
+
+
+
+
+
+
+
+
+
 
   Console.BackgroundColor = ConsoleColor.Red;
 
@@ -225,6 +242,8 @@ Console.ReadKey();
   }
   Console.WriteLine("sonuç budur" + sonuc);
       Console.ReadKey();
+
+
 
 
 
