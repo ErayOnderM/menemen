@@ -337,3 +337,100 @@ Console.ReadKey();
     Console.WriteLine($"İndirim Tutarı: {indirimTutari:F2} TL");
     Console.WriteLine($"Ödenmesi Gereken Tutar: {odemeGerekenTutar:F2} TL");
         Console.ReadKey();
+
+
+
+
+
+ float sayi = 15.591f;
+
+ Console.WriteLine(Math.Round(sayi));
+ Console.WriteLine(Math.Round(sayi , 1));
+ Console.WriteLine(Math.Round(sayi , 2));
+ Console.WriteLine("----------------------------------");
+ Console.WriteLine("yukarı yuvarlama");
+ Console.WriteLine(Math.Ceiling(sayi));
+ Console.WriteLine(Math.Ceiling(14.001f));
+ Console.WriteLine("----------------------------------");
+ Console.WriteLine("aşağı yuvarlama");
+ Console.WriteLine(Math.Floor(sayi));
+ Console.WriteLine(Math.Floor(74.99f));
+ Console.ReadKey();
+
+
+
+
+
+
+ //ToLower
+ string kelime = "   NevŞ  Ehir? "; // 3 boşluk başta , 2 sonda
+ string yeni = kelime.ToLower();
+ Console.WriteLine(yeni);
+ Console.WriteLine(kelime.ToUpper());
+
+ int uzunluk = kelime.Length;
+ Console.WriteLine(uzunluk);
+
+ // string ifadelerin başındaki ve sonundaki boşlukarı kaldırır
+ string k1 = kelime.Trim();
+ Console.WriteLine(k1);
+ // string ifadenin başındaki boşlukları kaldırır 
+ Console.WriteLine(kelime.TrimStart() + '.');
+
+
+
+
+
+
+ string k2 = "Bilgisayar Programcılığı";
+
+ bool sonuc = k2.Contains("a");
+ Console.WriteLine(sonuc);
+ 
+ Console.WriteLine( k2.Contains("A") );
+ Console.WriteLine( k2.Contains("say") );
+ Console.WriteLine( k2.Contains("e") );
+
+ if (sonuc == true)
+ {
+     Console.WriteLine("ifade a harfini içermektedir");
+ }
+ else
+ {
+     Console.WriteLine("ifade a harfini içermemektedir");
+ }
+
+ 
+
+ k2.StartsWith("B");
+
+
+
+
+
+
+
+
+
+ string kelime1 = "Bilgisayar Programcılığı";
+
+ //1 den başlar ve geri kalanları kopyalar
+ string k3 = kelime1.Substring(1);
+ Console.WriteLine(k3);
+
+ //1 den başlar ve 4 karakter kopyalar
+ string k4 = kelime1.Substring(1,4);
+ Console.WriteLine(k4);
+
+
+
+ Console.WriteLine("Adınız: ");
+ string isim= Console.ReadLine();
+
+ string ilkKarakter = isim.Substring(0,1);
+ int uzunluk1 = isim.Length;
+ string maskeli = ilkKarakter.PadRight(uzunluk1 , '*');
+
+
+
+
