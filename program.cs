@@ -484,3 +484,35 @@ Console.ReadKey();
 
 
 
+
+
+
+
+
+
+
+
+int[] sayilar = { 10, 9, 33, 96, 28, 24, 19, 7, 68, 28 };
+
+//dizideki eleman sayısı 
+int elemanSayisi = sayilar.Length;
+Console.WriteLine($"Eleman sayısı : {elemanSayisi}");
+
+//en büyük sayı 
+int enBuyukSayi = sayilar.Max();
+Console.WriteLine($"En büyük sayı : {enBuyukSayi}");
+
+//en küçük sayı 
+int enKucukSayi = sayilar.Min();
+Console.WriteLine($"En küçük sayı : {enKucukSayi}");
+
+//toplam 
+int toplam = sayilar.Sum();
+Console.WriteLine($"Eleman sayısı : {toplam}");
+
+//ortalama 
+double ortalama = sayilar.Average();
+Console.WriteLine($"Eleman sayısı : {ortalama}");
+
+
+
