@@ -434,3 +434,53 @@ Console.ReadKey();
 
 
 
+
+
+
+
+            //diziler array
+            /*
+            int[] yaslar = new int[5];
+
+            string[] isimler = new string[5];
+            Console.WriteLine("1. isim nedir? ");
+            isimler[0] = "Ahmet";
+            isimler[1] = "Mahmut";
+            isimler[2] = "Ela";
+            isimler[3] = "Cuma";
+            isimler[4] = "Zehra";
+
+            Console.WriteLine(isimler[3]);
+            Console.WriteLine("-----------");
+            Console.WriteLine(yaslar[2]);
+            Console.WriteLine("-----------");
+
+
+            Console.ReadKey();
+            */
+
+            string[] isimler = new string[5];
+
+            for (int i = 0; i < isimler.Length; i++)
+            {
+                Console.Write($"{i + 1}.isim nedir?");
+                isimler[i] = Console.ReadLine(); 
+            }
+            Console.WriteLine("isimler alındı yazdırmak için bir tuşa basın");
+            Console.ReadKey();
+            for (int i = 0;i < isimler.Length; i++)
+            {
+                Console.WriteLine(isimler[i]);
+            }
+            Console.WriteLine("Tersten sıralanmış liste için tuşa bas");
+            Console.ReadKey();
+            for(int i = isimler.Length-1; i>=0; i--)
+            {
+                Console.WriteLine(isimler[i]);
+            }
+            Console.WriteLine("program bitti bir tuşa basın");
+            Console.ReadKey();
+
+
+
+
