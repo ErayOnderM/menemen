@@ -516,3 +516,31 @@ Console.WriteLine($"Eleman sayısı : {ortalama}");
 
 
 
+
+
+
+
+
+
+
+
+            //forlusunu da yap
+
+            int toplam = 0;
+            int sayi = 0;
+            do
+            {
+               Console.WriteLine("Sayı gir la");
+               sayi=Convert.ToInt32(Console.ReadLine());
+                toplam+= sayi;
+            }
+            while (sayi!=0);
+            Console.WriteLine(toplam);
+            
+            Console.ReadKey();
+            
+            // döngülerde break kullanımı
+            // düngülerde continue kullanımı
+            // foreach döngüsü
+
+
